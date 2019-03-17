@@ -2,13 +2,78 @@
 
 .listContainer
 {
+  visibility:hidden;
   position:absolute;
   background-color:white;
   height:40px;
   width:100%;
   position:absolute;
-  top:59px;
+  top:70px;
   right:0;
-  visibility: hidden;
+  border-bottom:10px #ffd11a solid;
+  border-top:3px solid black;
+  z-index: -1;
 }
-.
+
+@media only screen and (max-width:800px)
+/* For mobile phones: */
+{
+  .listContainer
+  {
+    visibility: visible;
+    position:fixed;
+    z-index:5
+  }
+  #mobBut1
+  {
+    filter:invert(1);
+    height:100%;
+    position:absolute;
+    display:block;
+    top:0;
+    left:25%;
+  }
+  #mobBut2
+  {
+    filter:invert(1);
+    height:100%;
+    position:absolute;
+    display:block;
+    top:0;
+    left:45%;
+  }
+  #mobBut3
+  {
+    filter:invert(1);
+    height:100%;
+    position:absolute;
+    display:block;
+    top:0;
+    left:65%;
+  }
+  #mobBut4
+  {
+    filter:invert(1);
+    height:100%;
+    position:absolute;
+    display:block;
+    top:0;
+    left:85%;
+  }
+}
+#mobBut1:hover
+{
+  opacity:0.5;
+}
+#mobBut2:hover
+{
+  opacity:0.5;
+}
+#mobBut3:hover
+{
+  opacity:0.5;
+}
+#mobBut4:hover
+{
+  opacity:0.5;
+}

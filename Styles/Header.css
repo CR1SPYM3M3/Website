@@ -8,10 +8,19 @@
 {
   position:fixed;
   width:100%;
-  height:6%;
-  background-color:#090909;
+  height:8%;
+  background-color:RGBA(9,9,9,0.7);
   left:0;
   top:0;
+  overflow:hidden;
+  z-index:1;
+}
+.imageWrapper img
+{
+  left: 10%;
+  transform: translate(5%,0);
+  position: absolute;
+  z-index: 1
 }
 body
 {
@@ -22,20 +31,27 @@ ul {
   margin: 0;
   padding: 0;
   overflow:hidden;
-  background-color:#090909;
 }
 li {
   float:right;
 }
 li a {
-  font-family:sans-serif;
+  font-family:'Ubuntu', sans-serif;
   display: block;
   color:white;
   text-align:center;
-  padding:20px 60px;
+  padding:20px 40px;
   text-decoration: none;
   font-weight:bold;
   transition:all 0.125s ease-out;
+  font-size:22px;
+}
+img.logo
+{
+  position:absolute;
+  height:90%;
+  left:5px;
+  top:6px;
 }
 li a:hover
 {
@@ -46,8 +62,12 @@ li a:hover
 .current {
   background-color: #ffd11a;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
   /* For mobile phones: */
+  #header
+  {
+    background-color:rgba(255,255,255,0.9);
+  }
   li a {
     visibility: none;
     display:none;
@@ -61,21 +81,31 @@ li a:hover
     height:80%;
     right:25px;
   }
+  .imageWrapper img
+  {
+    left: 50% !important;
+    transform: translate(-50%,0);
+    position: absolute;
+    z-index: 1
+  }
+  img.logo
+  {
+    position:absolute;
+    filter:invert(1);
+    left: 1em;
+    top: 0.3em;
+    height:50px;
+
+  }
 }
 .licon:hover
 {
 
 }
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:1280px) {
   /* For mobile phones: */
   li a {
-    padding:20px 5px;
+    padding:20px 10px;
+    font-size:15px;
   }
-}
-img.logo
-{
-  position:absolute;
-  filter:invert(1);
-  height:90%;
-  left:25px;
 }

@@ -1,0 +1,147 @@
+@charset "utf-8";
+body
+{
+  background-color:#E3E1E1;
+}
+.jobContainer
+{
+  position:static;
+  top:100px;
+  width:100%;
+  height:800px;
+  background-color:#e2e2e2;
+  margin:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  border:2px solid red;
+}
+.jobContainer h1
+{
+  padding-top:25px;
+  color:#343434;
+  font-family:Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:60px;
+}
+.jobContainer hr
+{
+  color:#343434;
+  height:10px;
+  background-color:#343434;
+  border:0;
+}
+.Row1
+{
+  width:80%;
+  height:200px;
+  position:static;
+  margin:auto;
+  margin-top:50px;
+  background-color:#343434;
+  overflow:hidden;
+  transition: all 0.125s ease-out;
+  transform:scale(1);
+  padding-left:50px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.Row1 img
+{
+  height:100%;
+  top:-700px;
+  transition:all 0.25s ease-out;
+}
+.Row2
+{
+  padding-left:50px;
+  width:80%;
+  height:200px;
+  position:static;
+  margin:auto;
+  margin-top:50px;
+  background-color:#343434;
+  overflow:hidden;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.Row1:hover img
+{
+ transform:scale(1.5);
+}
+.Row2:hover img
+{
+ transform:scale(1.5);
+}
+.Row3:hover img
+{
+ transform:scale(1.3);
+}
+.Row2 img
+{
+  height:100%;
+  top:-700px;
+  transition:all 0.25s ease-out;
+}
+.Row3
+{
+  padding-left:50px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width:80%;
+  height:200px;
+  position:static;
+  margin:auto;
+  margin-top:50px;
+  background-color:#343434;
+  overflow:hidden;
+}
+.Row3 img
+{
+  height:100%;
+  top:-700px;
+  transition:all 0.25s ease-out;
+}
+.Row1 button
+{
+  position:absolute;
+  top:90px;
+  float:right;
+  right:160px;
+}
+.Row1 hr
+{
+  position:relative;
+  top:-120px;
+  background-color:white;
+  width:60%;
+}
+.Row1 h1
+{
+  position:relative;
+  top:-220px;
+  z-index:3;
+  color:white;
+  font-size:30px;
+}
+
+.Row2 button
+{
+  position:relative;
+  top:-180px;
+  float:right;
+  right:160px;
+}
+.Row3 button{
+  position:relative;
+  top:90px;
+  float:right;
+  right:160px;
+}
+.Row1 p
+{
+  top:-200px;
+  position:relative;
+  color:white;
+  font-family:Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:20px;
+}
